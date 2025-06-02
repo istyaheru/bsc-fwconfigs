@@ -4,5 +4,10 @@
   <description>Unsolicited incoming network packets are rejected, except for select network services. Incoming packets that are related to outgoing network connections are accepted. Outgoing network connections are allowed.</description>
   <service name="dhcpv6-client"/>
   <service name="mdns"/>
+  <icmp-block name="router-advertisement"/>
+  <icmp-block name="neighbour-solicitation"/>
+  <icmp-block name="neighbour-advertisement"/>
+  <icmp-block name="tos-network-redirect"/>
+  <icmp-block-inversion/>
   <forward/>
 </zone>
